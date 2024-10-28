@@ -1,0 +1,27 @@
+
+:root {
+   --bg-color: #101630;
+
+   /* Cores Gradiente */
+   --dark-purple: #4112a9;
+   --light-blue: #66acd9;
+
+   --gray: #72778a;
+
+   /* FONTS */
+   --paragraph-size: 1.4rem;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none !important;
+}
+
+body {
+   font-family: "Karla", sans-serif;
+   background-color: var(--bg-color);
+   color: white;
+   overflow-x: hidden;
+}

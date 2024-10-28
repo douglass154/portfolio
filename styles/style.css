@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Yeseva+One&display=swap');
+
+.button-style {
+   background: linear-gradient(270deg, var(--dark-purple), var(--light-blue));
+   color: white;
+   border: none;
+   border-radius: 7px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.button-style:hover {
+   box-shadow: 0 3px 15px #3eb3fc;
+}
+
+a:hover {
+   color: var(--light-blue) !important;
+}
+
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px 105px;
+   z-index: 2;
+   background-color: var(--bg-color);
+
+   position: sticky;
+   top: 0;
+}
+
+header img {
+   width: 110px;
+}
+
+header .nav {
+   display: flex;
+   align-items: center;
+}
+
+header .open-menu {
+   border: none;
+   background: none;
+   border-top: 3px solid white;
+   cursor: pointer;
+   display: none;
+}
+
+header .open-menu::before,
+header .open-menu::after {
+   content: " ";
+   display: block;
+   width: 30px;
+   height: 3px;
+   background-color: white;
+   margin-top: 5px;
+   position: relative;
+   transition: 0.4s;
+}
+
+header .nav-list {
+   display: flex;
+   align-items: center;
+   gap: 70px;
+}
+
+header .nav-list a,
+header .nav-list a button {
+   font-size: 1.3rem;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: white;
+   transition: 0.5s;
+}
+
+header .nav-list button {
+   padding: 15px 25px;
+}
+
+header .nav-list a:hover button {
+   color: white !important;
+}
+
+
+.container {
+   margin: 150px 110px 0;
+   position: relative;
+}
+
+.container .minha-area {
+   margin-bottom: 200px;
+}
+
+.container .minha-area span {
+   font-size: 4rem;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: var(--gray);
+}
+
+.container .minha-area h2 {
+   font-family: "Yeseva One", serif;
+   font-size: 10rem;
+   line-height: 160px;
+}
+
+
+.container .about-me {
+   display: flex;
+   gap: 80px;
+   margin-bottom: 150px;
+}
+
+.container .about-me .box-behind-photo {
+   border: 17px solid var(--light-blue);
+   border-radius: 7px;
+   width: 600px;
+   min-width: 560px;
+   height: 755px;
+   padding: 10px;
+   margin-left: 50px;
+}
+
+.container .about-me img {
+   width: 600px;
+   border-radius: 7px;
+
+   position: absolute;
+   transform: translate(-75px, -75px);
+}
+
+.container .about-me .about-me__informations {
+   width: 700px;
+   padding: 20px 0;
+}
+
+.container .about-me .about-me__informations h2 {
+   text-transform: uppercase;
+   font-size: 3.4rem;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+
+.container .about-me .about-me__informations p {
+   color: var(--gray);
+   font-weight: bold;
+   font-size: var(--paragraph-size);
+   line-height: 35px;
+}
+
+.container .projects-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   margin-bottom: 100px;
+}
+
+.container .projects-container #project-title {
+   font-size: 3rem;
+   text-transform: uppercase;
+   margin-bottom: 150px;
+}
+
+.container .projects-container .projects-list {
+   display: flex;
+   flex-direction: column;
+   gap: 120px;
+}
+
+.container .projects-container .projects-list .project {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 100px;
+}
+
+.container .projects-container .projects-list .project:nth-child(even) {
+   flex-direction: row-reverse;
+}
+
+.container .projects-container .projects-list .project .project-info {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   width: 750px;
+}
+
+.container .projects-container .projects-list .project .project-info h3 {
+   font-size: 3rem;
+   font-weight: normal
+}
+
+.container .projects-container .projects-list .project .project-info h2 {
+   font-size: 3.4rem;
+}
+
+.container .projects-container .projects-list .project .project-info p {
+   font-size: var(--paragraph-size);
+}
+
+.container .projects-container .projects-list .project .project-info a {
+   width: fit-content;
+   padding: 20px 40px 20px 0;
+   color: white;
+
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   transition: 0.5s;
+}
+
+.container .projects-container .projects-list .project .project-info a .arrow {
+   font-size: 2.4rem;
+}
+
+.container .projects-container .projects-list .project .project-info a .see-project {
+   font-size: 1.4rem;
+   padding-top: 4px;
+   font-weight: bold;
+}
+
+.container .projects-container .projects-list .project .box-behind-project {
+   border: 17px solid var(--light-blue);
+   border-radius: 7px;
+   padding: 10px;
+   width: 700px;
+   height: 470px;
+}
+
+.container .projects-container .projects-list .project img {
+   width: 700px;
+   aspect-ratio: 1.5;
+   border-radius: 7px;
+
+   position: absolute;
+   transform: translate(15px, -65px);
+}
+
+.container .projects-container .view-all-projects {
+   margin-top: 100px;
+   padding: 30px 80px;
+   font-size: 2rem;
+   font-weight: bold;
+}
+
+.container .experiences-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 150px;
+}
+
+.container .experiences-container h2 {
+   font-size: 3rem;
+   text-transform: uppercase;
+   margin-bottom: 70px;
+}
+
+.container .experiences-container .experiences-grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 150px;
+}
+
+.container .experiences-container .experiences-grid .experience {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.container .experiences-container .experiences-grid h5 {
+   font-size: 1.8rem;
+   color: var(--gray);
+   text-transform: uppercase;
+}
+
+.container .experiences-container .experiences-grid img {
+   width: 120px;
+}
+
+
+/* CONTACT SECTION AND FOOTER */
+.contact-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: linear-gradient(270deg, var(--light-blue), var(--dark-purple));
+   padding: 50px 115px;
+   border-radius: 170px 170px 0 0;
+}
+
+.contact-container .circulo {
+   position: absolute;
+   width: 500px;
+   height: 500px;
+   background: linear-gradient(var(--dark-purple), var(--light-blue));
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.247);
+   border-radius: 50%;
+   opacity: 0.6;
+   z-index: 0;
+}
+
+.contact-container .circulo-1 {
+   transform: translate(-195%, -220px);
+}
+
+.contact-container .circulo-2 {
+   transform: translate(195%, -220px);
+}
+
+.contact-container h2 {
+   font-size: 3rem;
+   text-transform: uppercase;
+   margin-bottom: 50px;
+}
+
+.contact-container .drop-message-container {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   margin-bottom: 80px;
+   z-index: 1;
+}
+
+.contact-container .drop-message-container .dropme-a-message {
+   width: 700px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   gap: 10px;
+}
+
+.contact-container .drop-message-container .dropme-a-message h3 {
+   font-size: 2.4rem;
+   margin-bottom: 15px;
+}
+
+.contact-container .drop-message-container .dropme-a-message p {
+   font-size: 1.7rem;
+   opacity: 0.5;
+}
+
+.contact-container .drop-message-container .dropme-a-message .contacts {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-top: 30px;
+}
+
+.contact-container .drop-message-container .dropme-a-message .contacts .cellphone,
+.contact-container .drop-message-container .dropme-a-message .contacts .email {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+
+.contact-container .drop-message-container .dropme-a-message .contacts .icon {
+   background: linear-gradient(120deg,var(--light-blue), #5147d8);
+   padding: 25px;
+   font-size: 3rem;
+   border-radius: 15px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+
+   display: flex;
+}
+
+.contact-container .drop-message-container .dropme-a-message .contacts span {
+   font-size: 1.7rem;
+}
+
+.contact-container .drop-message-container form {
+   background: linear-gradient(145deg, var(--light-blue), var(--dark-purple));
+   border-radius: 20px;
+   padding: 55px 35px;
+   width: 600px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+}
+
+.contact-container .drop-message-container form input,
+.contact-container .drop-message-container form #input-message {
+   padding: 25px 30px;
+   font-size: 1.7rem;
+   background-color: var(--bg-color);
+   border: none;
+   border-radius: 12px;
+   outline: none;
+   color: white;
+}
+
+.contact-container .drop-message-container form #input-message {
+   resize: none;
+   height: 170px;
+}
+
+.contact-container .drop-message-container form button {
+   width: 200px;
+   padding: 20px;
+   font-size: 1.5rem;
+   font-weight: bold;
+   background-color: var(--bg-color);
+   border: none;
+   border-radius: 12px;
+   color: white;
+   cursor: pointer;
+   transition: 0.2s;
+}
+
+.contact-container .drop-message-container form button:hover {
+   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.61);
+   transform: translateY(-2px);
+}
+
+.contact-container .drop-message-container form input::placeholder,
+.contact-container .drop-message-container form textarea::placeholder {
+   color: var(--gray);
+}
+
+.contact-container hr {
+   width: 100%;
+   opacity: 0.4;
+   margin-bottom: 50px;
+}
+
+.contact-container footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   width: 100%;
+}
+
+.contact-container footer div {
+   display: flex;
+   align-items: center;
+   gap: 100px;
+}
+
+.contact-container footer p {
+   font-size: 1.6rem;
+}
+
+.contact-container footer .social-medias {
+   display: flex;
+   gap: 20px;
+}
+
+.contact-container footer .social-medias a {
+   display: flex;
+
+   background: linear-gradient(145deg, var(--light-blue), var(--dark-purple));
+   padding: 20px;
+   font-size: 3rem;
+   border-radius: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+   color: white;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.contact-container footer .social-medias a:hover {
+   color: white !important;
+   transform: scale(1.07);
+}
