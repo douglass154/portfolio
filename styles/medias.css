@@ -212,7 +212,7 @@
    }
    
    .container .projects-container .projects-list .project img {
-      position: static;
+      position: relative;
       transform: translate(-13%, -6%);
       width: 600px;
    }
@@ -448,5 +448,210 @@
 
    .contact-container .circulo-2 {
       transform: translate(112%, -220px);
+   }
+}
+
+@media (max-width: 46rem) {
+   header {
+      padding: 15px 20px;
+   }
+
+   header img {
+      width: 60px;
+   }
+
+   .container {
+      margin: 50px 20px 0 28px;
+   }
+
+   .container .minha-area {
+      margin-bottom: 50px;
+   }
+
+   .container .minha-area span {
+      font-size: 2rem;
+   }
+
+   .container .minha-area h2 {
+      font-size: 3rem;
+      line-height: 55px;
+   }
+
+   .container .about-me {
+      margin-bottom: 40px;
+   }
+
+   .container .about-me img {
+      width: 100%;
+      max-width: 420px;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+
+   .container .about-me .box-behind-photo {
+      border: 0;
+   }
+
+   .container .about-me .about-me__informations {
+      width: 100%;
+   }
+
+   .container .about-me .about-me__informations h2 {
+      font-size: 2.3rem;
+   }
+
+   .container .about-me .about-me__informations p {
+      font-size: 16px;
+      line-height: 25px;
+   }
+
+   .container .projects-container #project-title {
+      margin-bottom: 50px;
+   }
+
+   .container .projects-container .project {
+      width: 100%;
+   }
+
+   .container .projects-container .projects-list {
+      width: 100%;
+      gap: 50px;
+   }
+   
+   .container .projects-container .projects-list .project .project-info {
+      width: fit-content;
+   }
+
+   .container .projects-container .projects-list .project .project-info h2 {
+      font-size: 1.8rem;
+   }
+
+   .container .projects-container .projects-list .project .project-info p {
+      line-height: 22px;
+   }
+
+   .container .projects-container .projects-list .project img {
+      width: 97%;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+
+   .container .projects-container .view-all-projects {
+      margin-top: 60px;
+      font-size: 1.2rem;
+   }
+
+   .container .experiences-container .experiences-grid {
+      gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .container .experiences-container .experiences-grid .github {
+      grid-column: 2/3;
+   }
+
+   .container .experiences-container .experiences-grid img {
+      width: 60px;
+   }
+
+   .container .experiences-container .experiences-grid h5 {
+      font-size: 1.2rem;
+      text-align: center;
+   }
+
+   .contact-container {
+      border-radius: 100px 100px 0 0;
+      padding: 50px 26px 20px;
+   }
+
+   .contact-container .drop-message-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+   }
+
+   .contact-container .drop-message-container .dropme-a-message {
+      justify-content: space-evenly;
+      width: fit-content;
+   }
+
+   .contact-container .drop-message-container .dropme-a-message h3 {
+      font-size: 1.6rem;
+   }
+
+   .contact-container .drop-message-container .dropme-a-message p {
+      font-size: 1rem;
+   }
+
+   .contact-container .drop-message-container form {
+      width: 100%;
+      padding: 40px 25px;
+   }
+
+   .contact-container .drop-message-container .dropme-a-message .contacts .cellphone,
+   .contact-container .drop-message-container .dropme-a-message .contacts .email {
+      gap: 10px;
+   }
+
+   .contact-container .drop-message-container .dropme-a-message .contacts .icon {
+      padding: 15px;
+      font-size: 1.6rem;
+   }
+
+   .contact-container .drop-message-container .dropme-a-message .contacts span {
+      font-size: 1.1rem;
+   }
+
+   .contact-container footer {
+      gap: 15px;
+   }
+
+   .contact-container footer img {
+      width: 50px;
+   }
+   
+   .contact-container footer div {
+      gap: 10px;
+      align-items: center;
+   }
+   
+   .contact-container footer p {
+      font-size: 0.7rem;
+      text-align: right;
+   }
+   
+   .contact-container footer .social-medias {
+      flex-direction: row;
+      gap: 5px;
+   }
+   
+   .contact-container footer .social-medias a {
+      padding: 9px;
+      font-size: 1rem;
+      border-radius: 50%;
+   }
+
+   .contact-container .circulo-1,
+   .contact-container .circulo-2 {
+      display: none;
+   }
+}
+
+@media (max-width: 30rem) {
+   .container .minha-area {
+      margin-bottom: 30px;
+   }
+
+   .container .minha-area span {
+      font-size: 1.2rem;
+   }
+
+   .container .minha-area h2 {
+      font-size: 2rem;
+      line-height: 35px;
+   }
+
+   .container .about-me {
+      gap: 0;
    }
 }

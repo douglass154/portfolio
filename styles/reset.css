@@ -19,7 +19,8 @@
    text-decoration: none !important;
 }
 
-body {
+body,
+html {
    font-family: "Karla", sans-serif;
    background-color: var(--bg-color);
    color: white;
