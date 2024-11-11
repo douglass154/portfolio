@@ -460,6 +460,10 @@
       width: 60px;
    }
 
+   header .nav.active .open-menu {
+      right: 20px;
+   }
+
    .container {
       margin: 50px 20px 0 28px;
    }
@@ -653,5 +657,9 @@
 
    .container .about-me {
       gap: 0;
+   }
+
+   .contact-container {
+      border-radius: 45px 45px 0 0
    }
 }
